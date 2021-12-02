@@ -1,0 +1,405 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+.topnav {
+    overflow: hidden;
+    background-color: teal;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #FFBD59;
+    color: black;
+  }
+  
+ 
+  .topnav .login-container {
+    float: right;
+    display:inline-flex;
+  }
+  
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px; 
+  }
+  
+ 
+  .topnav .login-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #FFBD59;
+    box-shadow: 3px 5px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .topnav .login-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .login-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .login-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+    /* Carousal */
+    .firstsection {
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+        background-image: url(https://images.pexels.com/photos/1472237/pexels-photo-1472237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-repeat: repeat-y;
+        background-position: center;
+        
+        
+
+    }
+    .carousel h1,h2 {
+        font-weight: 200px;
+        margin: 0.4em 0;
+        color: white;
+        text-align: center;
+
+    }
+
+    .carousel h1 {
+        font-size: 3.5em;
+    }
+
+    .carousel h2 {
+        color: #FFBD59;
+        font-size: 2em;
+    }
+
+    .container-img img {
+        width: 100%;
+        height: 400px;
+    }
+     
+
+
+    .secondsection {
+        background-color: teal;
+        height: 100px;
+        padding: 1px;
+        width: 100%;
+        
+
+    }
+    
+    .secondsection h2 {
+    color: white;
+    }
+
+    .btn-manufacturers {
+        padding: 12px 20px;
+        margin: auto;
+        text-align: center;
+        display:block;
+        width: 250px;
+        border: 1px solid #FFBD59;
+        box-shadow: 3px 5px;
+        border-radius: 1px;
+        background: none;
+        color: black;
+        cursor: pointer;
+        background-color: #FFBD59;
+
+    }
+    .thirdsection {
+        background-color: white;
+        height: 300px;
+        padding: 1px;
+        width: 100%;
+        display: inline-flex;
+        margin-left: 250px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .card-1 {
+        width: 300px;
+        border: 1px solid black;
+        background-color: #FFBD59;
+        box-shadow: 3px 5px;
+        padding: 70px;
+        margin: 10px;
+        box-sizing: 10px;
+        text-align: center;
+    }
+
+    .card-2 {
+        width: 300px;
+        border: 1px solid black;
+        background-color: #FFBD59;
+        box-shadow: 3px 5px;
+        padding: 70px;
+        margin: 10px;
+        box-sizing: 10px;
+        text-align: center;
+    }
+
+    .card-3 {
+        width: 300px;
+        border: 1px solid black;
+        background-color: #FFBD59;
+        box-shadow: 3px 5px;
+        padding: 70px;
+        margin: 10px;
+        box-sizing: 10px;
+        text-align: center;
+    }
+    .fourthsection {
+        background-color: teal;
+        height: 100px;
+        padding: 1px;
+        width: 100%;
+
+    }
+    .fourthsection h2 {
+        color: white;
+    }
+    
+
+    .btn-buyers {
+        padding: 8px 20px;
+        margin: auto;
+        text-align: center;
+        display:block;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 1px;
+        background: none;
+        color: black;
+        cursor: pointer;
+        background-color: #FFBD59;
+        box-shadow: 3px 5px;
+
+    }
+
+    .fifthsection {
+        height: 350px;
+        padding: 50px;
+        background-image: url(https://s.wsj.net/public/resources/images/BN-JE430_0701af_M_20150630210837.jpg);
+
+ 
+    }
+
+    .fifthsection h1 {
+        color: black;
+        margin: 10px;
+        background-color: #FFBD59;
+        width: 30%;
+        
+        
+    }
+
+    .footer {
+        background-color: teal;
+        height: 80px;
+        margin-top: 20px;
+
+    }
+    .text-footer {
+        text-align: center;
+        padding: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    /* Login */
+    #email {  
+        width: 100%; 
+        font-size: 16px;
+        padding: 7px;
+        border: 1px solid #ddd; 
+        margin-bottom: 12px; 
+    }
+
+    #password {  
+        width: 100%; 
+        font-size: 16px;
+        padding: 7px;
+        border: 1px solid #ddd; 
+        margin-bottom: 12px; 
+    }
+
+ 
+    
+    .login-register {
+
+        padding: 6px;
+        margin: 20px,;
+        background: #FFBD59;
+        box-shadow: 3px 5px;
+        font-size: 17px;
+        border: none;
+        color: black;
+    }
+
+    .register-login-btn {
+        color: teal;
+        display: block;
+        margin-top: 10px;
+    }
+
+     
+.searchPage-main {
+    padding: 30px;
+}
+
+
+     .formContainer {
+        padding: 10px;
+        margin: 10px
+     }
+     .formContainer p{
+        font-size: 16px;
+     }
+
+
+
+     /* Search Page */
+ 
+    .factory-card {
+        width: 30%;
+        display: inline-block;
+        flex-direction: column;
+        border: 1px teal solid;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 black;
+        transition: 0.3s;
+        padding: 2px 10px;
+    }
+    .factory-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+
+    .container {
+        padding: 2px 16px;
+        
+    }
+
+    #sign-up-btn {
+        display:inline-block;
+    }
+
+    .register {
+        padding: 14px 20px;
+        background-color: gray;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }  
+
+    .mainheading h1 {
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .mainheading p {
+        padding: 5px;
+        margin: 0px;
+    }
+    #apartOfAfrica {
+        background-image: url('/Content/favicon_io.zip'); 
+        background-position: 10px 12px; 
+        background-repeat: no-repeat; 
+        width: 100%; 
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd; 
+        margin-bottom: 12px; 
+      }
+
+      #factories {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+      }
+
+       #factories li a {
+            border: 1px solid #ddd;
+            margin-top: -1px; 
+            background-color: #f6f6f6; 
+            padding: 12px; 
+            text-decoration: none;
+            font-size: 18px; 
+            color: black; 
+            display: block; 
+            width: 100%;
+            background-color: #FFBD59;
+          }
+
+        #factories li a:hover:not(.header) {
+            background-color: #eee;
+          }
+
+          /* Register */
+
+        #email {  
+        width: 100%; 
+        font-size: 16px;
+        padding: 7px;
+        border: 1px solid #ddd; 
+        margin-bottom: 12px; 
+        }
+
+        #name {
+            width: 100%; 
+            font-size: 16px;
+            padding: 7px;
+            border: 1px solid #ddd; 
+            margin-bottom: 12px; 
+        }
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header></header>
+        <div class="topnav">
+            <a class="active" href="homePage.html">Home</a>
+            <a href="homePage.html">Find Manufacturers</a>
+            <a href="homePage.html">Community</a>
+            <a href="homePage.html">Join GC</a>
+
+            <div class="login-container">
+            <form method="get" action="/register.html">
+            <button type="submit">Register</button>
+            </form>
+            </div>
+
+          </div>
+        </header>
+        <form class="login" method="POST" action="/login" id="login" class="login">
+            <div class="formContainer">
+            <h1>Login</h1>
+            <hr>
+
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="password"><b>password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            </div>
+            </form>
+
+           
+           <!-- <form method="get" action="/searchPage.html"></form>
+            <button type="submit" class="login-register">Login</button>
+            </form>
+
+-->
+
+            <form method="get" action="/searchPage.html">
+                <button type="submit" class="login-register" id="login-btn" onclick="greet ()">Login</button>
+                </form>
+
+            <a href="/register" class="register-login-btn">Register</a>
+        </main>
+        
+        <script src="gioCommerce.js" async defer></script>
+    </body>
+    <footer class="footer">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</html>
+
