@@ -152,7 +152,7 @@
         padding: 1px;
         width: 100%;
         display: inline-flex;
-        margin-left: 250px;
+        margin-left: 150px;
         margin-bottom: 15px;
         margin-top: 10px;
     }
@@ -234,12 +234,23 @@
         
     }
 
-    .footer {
-        background-color: teal;
-        height: 80px;
-        margin-top: 20px;
-
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
+
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: teal;
+        color: white;
+        text-align: center;
+      }
+
     .text-footer {
         text-align: center;
         padding: 30px;

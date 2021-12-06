@@ -1,12 +1,9 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
-  }
-  
-  const express = require('express')
-
+require("dotenv").config();
+  const express = require('express');
   const app = express();
 
-  app.use(express.json());
+  app.use(express.static("client"));
+
 
   let globalID = 2;
 
@@ -31,7 +28,6 @@ if (process.env.NODE_ENV !== 'production') {
   }]
   
   
-
   app.use(express.urlencoded({ extended: false }))
   app.use(flash())
   app.use(session({
@@ -43,12 +39,18 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(passport.session())
   app.use(methodOverride('_method'))
   
+  app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/gioCommerce.js'))
+  });
+
+  app.use('/js', express.static(path.join(__dirname, 'client/gioCommerce.js')))
+
   app.get('/', checkAuthenticated, (req, res) => {
-    res.render('searchPage.html', { name: req.user.name })
+    res.render('client/searchPage.html', { name: req.user.name })
   })
   
   app.get('/login', checkNotAuthenticated, (req, res) => {
-    res.render('/login.html')
+    res.render('client/login.html')
   })
   
   app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
@@ -58,7 +60,7 @@ if (process.env.NODE_ENV !== 'production') {
   }))
   
   app.get('/register', checkNotAuthenticated, (req, res) => {
-    res.render('register.html')
+    res.render('client/register.html')
   })
   
  app.post('/register', checkNotAuthenticated, async (req, res) => {
@@ -96,7 +98,11 @@ if (process.env.NODE_ENV !== 'production') {
     }
     next()
   }
-  
-  
-  app.listen(5050, () => console.log("Server running on 5050"));
 
+  
+
+  const PORT = process.env.PORT || 5050;
+  
+  app.listen(PORT, () => console.log(`Your server is running ${PORT}`)); 
+
+  

@@ -4,7 +4,6 @@
   "main": "gioCommerce.js",
   "scripts": {
     "devStart": "nodemon server.js"
-    
   },
   "keywords": [],
   "author": "",
